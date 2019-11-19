@@ -1,0 +1,17 @@
+{
+  "name": "ast-transformations",
+  "version": "0.0.1",
+  "main": "index.js",
+  "author": "Jason Lengstorf <jason@lengstorf.com> (https://lengstorf.com)",
+  "license": "MIT",
+  "dependencies": {
+    "hastscript": "^5.1.1",
+    "rehype-raw": "^4.0.1",
+    "rehype-stringify": "^6.0.1",
+    "remark-html": "^10.0.0",
+    "remark-parse": "^7.0.2",
+    "remark-rehype": "^5.0.0",
+    "unified": "^8.4.2",
+    "unist-util-visit": "^2.0.1"
+  }
+}
