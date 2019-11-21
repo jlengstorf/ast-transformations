@@ -5,6 +5,7 @@ module.exports = _options => tree => {
     tree,
     node => node.tagName === 'img',
     node => {
+      console.log({ tree, node });
       const src = node.properties.src;
       const alt = node.properties.alt;
 
@@ -17,9 +18,8 @@ module.exports = _options => tree => {
           type: 'element',
           tagName: 'img',
           properties: {
-            src: 'https://example.org',
-            alt: 'test',
-            title: 'test title'
+            src,
+            alt
           }
         },
         {
@@ -28,7 +28,7 @@ module.exports = _options => tree => {
           children: [
             {
               type: 'text',
-              value: 'Look at this puppy!'
+              value: alt
             }
           ]
         }
